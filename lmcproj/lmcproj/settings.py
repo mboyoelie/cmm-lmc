@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'lmcproj.wsgi.application'
     }
 }"""
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'marine',
@@ -90,7 +90,19 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
     }
+}"""
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cmm',
+        'USER': 'eliemboyo',
+        'PASSWORD': 'elliot1989',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
 }
+
 
 
 # Password validation
